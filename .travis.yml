@@ -32,8 +32,9 @@ before_install:
 
 before_script:
   - cd /home/travis/build/ossc-db/pg_rman
-  - git clone https://github.com/ossc-db/pg_rman.git pg_rman
+  - git clone https://github.com/atorik/pg_rman.git pg_rman
   - cd pg_rman && git describe --alway
+  - git checkout -b rename-pg_xlog remotes/origin/rename-pg_xlog
   - make
   - make install
 
