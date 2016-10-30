@@ -44,7 +44,7 @@ env:
 branches:
   only:
     - renamed-pg_xlog
-
+ 
 language: cpp
 compiler:
 #  - clang
